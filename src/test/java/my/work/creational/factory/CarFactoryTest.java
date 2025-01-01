@@ -4,6 +4,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 
+import my.work.creational.factory.factory.CarFactory;
+import my.work.creational.factory.vehicle.Car;
+
 class CarFactoryTest {
 
 	@Test

@@ -1,4 +1,6 @@
-package my.work.creational.factory;
+package my.work.creational.factory.factory;
+
+import my.work.creational.factory.vehicle.Truck;
 
 public class TruckFactory implements VehicleFactory {
 

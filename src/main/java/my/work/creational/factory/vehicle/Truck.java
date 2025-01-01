@@ -1,4 +1,4 @@
-package my.work.creational.factory;
+package my.work.creational.factory.vehicle;
 
 public class Truck implements Vehicle {
 
