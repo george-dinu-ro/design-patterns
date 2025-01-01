@@ -19,5 +19,4 @@ class EnumSingletonTest {
 
 		assertThat(instance1).isSameAs(instance2);
 	}
-
 }

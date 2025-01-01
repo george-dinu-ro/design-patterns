@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 class SerializableSingletonTest {
 
 	@Test
-	void whenCallGetInstanceFromDifferentThreads_thenShouldReturnSameInstance()
+	void whenDeserializeBeforeSerializedInstance_thenShouldReturnSameInstance()
 			throws IOException, ClassNotFoundException {
 
 		var instance1 = SerializableSingleton.getInstance();
