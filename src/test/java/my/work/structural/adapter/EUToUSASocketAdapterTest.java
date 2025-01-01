@@ -8,7 +8,7 @@ class EUToUSASocketAdapterTest {
 
 	@Test
 	void givenEUVoltage_whenUseAdapter_thenTransformToUSAVoltage() {
-		var euSocket = new EUSocketImpl();
+		EUSocket euSocket = () -> 230;
 		var adapter = new EUToUSASocketAdapter(euSocket);
 
 		assertThat(euSocket.getVoltage()).isEqualTo(230);
