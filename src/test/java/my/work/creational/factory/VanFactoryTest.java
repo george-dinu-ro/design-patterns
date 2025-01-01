@@ -9,6 +9,8 @@ class VanFactoryTest {
 	@Test
 	void whenCallBuildVehicle_thenReturnVan() {
 		var van = VanFactory.buildVehicle();
+		van.startEngine();
+		van.stopEngine();
 
 		assertThat(van).isInstanceOf(Van.class);
 	}
@@ -17,6 +19,8 @@ class VanFactoryTest {
 	void whenCallCreateVehicle_thenReturnVan() {
 		var vanFactory = new VanFactory();
 		var van = vanFactory.createVehicle();
+		van.startEngine();
+		van.stopEngine();
 
 		assertThat(van).isInstanceOf(Van.class);
 	}
