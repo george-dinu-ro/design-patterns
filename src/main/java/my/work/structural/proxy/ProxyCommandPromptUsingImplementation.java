@@ -9,11 +9,11 @@ public class ProxyCommandPromptUsingImplementation implements Console {
 
 	private boolean isAdmin;
 
-	private RegularCommandPrompt regularCommandPrompt;
+	private Console console;
 
 	public ProxyCommandPromptUsingImplementation(boolean isAdmin) {
 		this.isAdmin = isAdmin;
-		regularCommandPrompt = new RegularCommandPrompt();
+		console = new RegularCommandPrompt();
 	}
 
 	@Override
@@ -26,6 +26,6 @@ public class ProxyCommandPromptUsingImplementation implements Console {
 	}
 
 	private boolean isCommandSuccessfullyExecuted(String command) {
-		return regularCommandPrompt.executeCommand(command);
+		return console.executeCommand(command);
 	}
 }
